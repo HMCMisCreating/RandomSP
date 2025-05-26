@@ -8,9 +8,15 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.9.0"
 activityCompose = "1.8.0"
 composeBom = "2024.09.00"
+lottieComposeVersion = "6.1.0"
+lottieVersion = "6.3.0"
 navigationCompose = "2.9.0"
+lottie = "3.4.0"
+lottieCompose = "4.0.0"
 
 [libraries]
+android-lottie = { module = "com.airbnb.android:lottie", version.ref = "lottieVersion" }
+android-lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieComposeVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -26,6 +32,8 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+lottie = { group = "implementation ", name = "lottie", version.ref = "lottie" }
+lottie-compose = { group = "implementation(", name = "lottie-compose", version.ref = "lottieCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
